@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+#include <numeric>
+
+using namespace std;
+typedef long long ll;
+
+void solve()
+{
+	int n, h, cnt;
+	cin >> n >> h;
+	vector<int> a(n);
+	for (int i = 0; i < n; i++)
+	{
+		cin >> a[i];
+	}
+	bool flag = 0;
+	sort(a.begin(), a.end(), greater<int>());
+	int sum = a[0] + a[1];
+	cnt = (h / sum) * 2;
+	h %= sum;
+	if (0 < h && h <= a[0])
+	{
+		cnt++;
+	}
+	else if (h > a[0])
+	{
+		cnt += 2;
+	}
+	cout << cnt << endl;
+}
+
+int main()
+{
+	int tc;
+	cin >> tc;
+	while (tc--)
+	{
+		solve();
+	}
+	return 0;
+}
