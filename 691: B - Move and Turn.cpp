@@ -36,9 +36,7 @@ void solve()
 
 int main()
 {
-	int tc;
-	cin >> tc;
-	tc = 1;
+	int tc = 1;
 	while (tc--)
 	{
 		solve();
