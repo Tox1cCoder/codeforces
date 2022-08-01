@@ -9,11 +9,11 @@ void solve()
 	ll n;
 	cin >> n;
 
-	ll dot = 0, times = 0, ans;
+	ll dot = 0, times = 0, ans = 0;
 	if (n % 2)
 	{
 		dot++;
-		for (ll i = 1; i < n; i += 2)
+		for (ll i = 0; i < n; i += 2)
 		{
 			dot++;
 			times++;
