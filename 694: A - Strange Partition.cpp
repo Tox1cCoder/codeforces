@@ -17,7 +17,7 @@ void solve()
 		max += ceil(double(a[i]) / double(x));
 	}
 
-	cout << 1ll * ceil(double(sum) / double(x)) << ' ' << max << endl;
+	cout << (ll)ceil(double(sum) / double(x)) << ' ' << max << endl;
 }
 
 int main()
